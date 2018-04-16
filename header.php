@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="author" content="UpMarketing Digital - Jonilson / Wacrksson" />
+        <meta name="author" content="Lucas Peixoto" />
         <meta name="language" content="pt-br" />
         <meta name="keywords" content="" />
         <meta name="description" content="" />
@@ -24,7 +24,12 @@
         <meta name="unknownrobot" content="index,follow,all" />
         <meta name="classification" content="commercial" />
         <meta name="distribution" content="global" />
+        
+        <?php if (has_post_thumbnail()) : ?>
+        <meta property="og:image" content="<?= get_the_post_thumbnail_url(null, 'medium', ''); ?>" />
+        <?php else : ?>
         <meta property="og:image" content="<?= DIR; ?>/assets/img/site.png" />
+        <?php endif; ?>
 
         <?php wp_head(); ?>
     </head>
