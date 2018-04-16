@@ -6,6 +6,21 @@ Description: Tema no wordpress para o site da organização IACC.
 Tags: IACC, Apoio, Cancer infantil, Cura
 Version: 1.0
 */
+
+
+/* ------------------------------------- */
+/* TABLE OF CONTENTS
+/* -------------------------------------
+  1. FIXED AND PERMANENT STYLING
+  2. GENERAL
+    -2.1 SECTION TITLE
+  ------------------------------------- */
+
+
+/*==========================================================================
+  1. FIXED AND PERMANENT STYLING
+  ==========================================================================*/
+  
 .alignleft {
   float: left;
   margin-right: 1.5em;
