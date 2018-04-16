@@ -24,7 +24,7 @@
         <meta name="unknownrobot" content="index,follow,all" />
         <meta name="classification" content="commercial" />
         <meta name="distribution" content="global" />
-        
+
         <?php if (has_post_thumbnail()) : ?>
         <meta property="og:image" content="<?= get_the_post_thumbnail_url(null, 'medium', ''); ?>" />
         <?php else : ?>
@@ -34,10 +34,27 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <header class="header">
-            <div class="container">
 
-            <?php get_template_part( 'templates/menu' ); ?>
+      <section class="section-navbar">
+        <div class="container">
+          <nav class="navbar nav-background-color font-bold nav-fonts d-flex justify-content-between" style="background-image: url('<?= DIR; ?>/assets/img/doodle_bg.png');">
+            <a class="phone-navbar">(88) 3532-3743</a>
+            <a class="navbar-bran logo-tag" href=""><img src="<?= DIR; ?>/assets/img/LOGO.png" alt="IACC" class="logotipo"></a>
+            <div class="button-store">
+                <i class="fa fa-shopping-cart mr-1" aria-hidden="true"></i>
+                Lojinha
+                <a href="#"></a>
+            </div>
+          </nav>
+          </div>
+        </div>
+      </section>
 
-          	</div>
-        </header>
+
+      <section class="section-top-bar">
+        <div class="container">
+
+          <?php get_template_part( 'templates/menu' ); ?>
+
+        </div>
+      </section>

@@ -143,8 +143,26 @@ Version: 1.0
     display: block;
   }
 
-  .dropdown-backgroud{
+  .main-menu .menu-item-has-children>a::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid #000;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+
+  }
+
+  .main-menu .nav-item:hover ul{
     background-color: #fff200 !important;
+  }
+
+  .main-menu .nav-item {
+    position: relative;
   }
 
 
@@ -272,7 +290,7 @@ Version: 1.0
   }
 
   .image-background {
-    background-image: url(../img/slider2.png);
+    background-image: url(./assets/img/slider2.jpg);
     background-repeat: no-repeat;
   	background-position: 0 0;
     background-size: contain;
@@ -469,5 +487,13 @@ Version: 1.0
     .image-background {
       background-image: none;
     }
+
+    @media (min-width: 992px) {
+      .navbar-expand-lg .navbar-nav .nav-link {
+          padding-right: .3rem !important;
+          padding-left: .3rem !important;
+      }
+    }
+
 
   }
