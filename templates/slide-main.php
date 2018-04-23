@@ -1,6 +1,22 @@
 <section class="section-slide">
   <div class="main-slide-show">
-    <div style="background-image: url('<?= DIR; ?>/assets/img/slide1.png'); height: 500px;"></div>
-    <div style="background-image: url('<?= DIR; ?>/assets/img/slide1.png'); height: 500px;"></div>
+
+    <?php
+
+    $post = 'slide';
+    $ppp = -1;
+    $loop = new WP_Query( array( 'post_type' => $post, 'posts_per_page' => $ppp ) );
+
+    if( $loop->have_posts() ){
+        while( $loop->have_posts() ) {
+            $loop->the_post();
+
+            ?>
+
+            <div style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'full', ''); ?>'); height: 500px;"></div>
+
+        <?php }
+      } ?>
+
   </div>
 </section>

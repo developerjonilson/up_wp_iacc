@@ -113,16 +113,21 @@
     </section>
 
     <!-- slide about  -->
-    <?php get_template_part('templates/slide-about'); ?>
+    <section id="sobre">
+      <?php get_template_part('templates/slide-about'); ?>
+    </section>
 
     <section class="section-gallery">
-      <div class="btn-our-gallery d-flex align-items-center justify-content-center">
+      <?php
+        echo do_shortcode('[instagram-feed]');
+       ?>
+      <!-- <div class="btn-our-gallery d-flex align-items-center justify-content-center">
         <div class="align-text-btn-gallery">
-          <img src="<?= DIR; ?>/assets/img/camera.png" alt="Ícone Instagram">
+          <img src="/assets/img/camera.png" alt="Ícone Instagram">
           <div class="text-gallery">Nossa Galeria</div>
           <a href="#"></a>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- slide show  -->

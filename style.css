@@ -143,6 +143,13 @@ Version: 1.0
     display: block;
   }
 
+  @media (max-width: 992px) {
+    .dropdown .dropdown-menu {
+      display: block;
+      background-color: #fff200;
+    }
+  }
+
   .main-menu .menu-item-has-children>a::after {
     display: inline-block;
     width: 0;
@@ -170,6 +177,15 @@ Version: 1.0
     background-color: #fff200 !important;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  .nav-link {
+    font-size: 14px !important;
+  }
+
+  .dropdown-item {
+    font-weight: 700 !important;
+    /* font-size: 14px !important; */
   }
 
   .nav-yellow{
