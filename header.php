@@ -25,6 +25,8 @@
         <meta name="classification" content="commercial" />
         <meta name="distribution" content="global" />
 
+        <link rel="shortcut icon" href="<?= DIR; ?>/assets/icon/favicon.ico" >
+
         <?php if (has_post_thumbnail()) : ?>
         <meta property="og:image" content="<?= get_the_post_thumbnail_url(null, 'medium', ''); ?>" />
         <?php else : ?>

@@ -218,4 +218,60 @@ function custom_post_parceiros() {
 }
 add_action( 'init', 'custom_post_parceiros', 0 );
 
+
+function custom_post_projetos() {
+
+	$labels = array(
+		'name'                  => _x( 'Projetos', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Projeto', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Projetos', 'text_domain' ),
+		'name_admin_bar'        => __( 'Projetos', 'text_domain' ),
+		'archives'              => __( '', 'text_domain' ),
+		'attributes'            => __( '', 'text_domain' ),
+		'parent_item_colon'     => __( '', 'text_domain' ),
+		'all_items'             => __( 'Todos', 'text_domain' ),
+		'add_new_item'          => __( 'Adicionar Novo Projeto', 'text_domain' ),
+		'add_new'               => __( 'Adicionar Novo', 'text_domain' ),
+		'new_item'              => __( 'Novo Projeto', 'text_domain' ),
+		'edit_item'             => __( 'Editar Projeto', 'text_domain' ),
+		'update_item'           => __( 'Atualizar Projeto', 'text_domain' ),
+		'view_item'             => __( 'Visualizar Projeto', 'text_domain' ),
+		'view_items'            => __( 'Visualizar Projetos', 'text_domain' ),
+		'search_items'          => __( '', 'text_domain' ),
+		'not_found'             => __( 'Não encontrado', 'text_domain' ),
+		'not_found_in_trash'    => __( '', 'text_domain' ),
+		'featured_image'        => __( 'Logo do Projeto', 'text_domain' ),
+		'set_featured_image'    => __( 'Selecionar Logo do Projeto', 'text_domain' ),
+		'remove_featured_image' => __( 'Remover Logo do Projeto', 'text_domain' ),
+		'use_featured_image'    => __( 'Usar como Logo do Projeto', 'text_domain' ),
+		'insert_into_item'      => __( '', 'text_domain' ),
+		'uploaded_to_this_item' => __( '', 'text_domain' ),
+		'items_list'            => __( '', 'text_domain' ),
+		'items_list_navigation' => __( '', 'text_domain' ),
+		'filter_items_list'     => __( '', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Projeto', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'thumbnail', 'editor' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-format-image',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+		'show_in_rest'          => true,
+	);
+	register_post_type( 'projeto', $args );
+
+}
+add_action( 'init', 'custom_post_projetos', 0 );
+
 ?>

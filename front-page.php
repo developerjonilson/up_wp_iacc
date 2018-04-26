@@ -20,7 +20,16 @@
                 <div class="row d-flex align-items-center">
 
                   <div class="col-12 col-md-6">
-                    <a href="#"><h2 class="donaiton-title font-bold btn btn-donation btn-donate"> QUERO DOAR!</h2></a>
+                    <center><!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                    <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html?iot=button" method="post">
+                    <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                    <input type="hidden" name="currency" value="BRL" />
+                    <input type="hidden" name="receiverEmail" value="iacc1@hotmail.com" />
+                    <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/120x53-doar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                    </form>
+                    <!-- FINAL FORMULARIO BOTAO PAGSEGURO --></center>
+                    
+                    <!-- <a href="#"><h2 class="donaiton-title font-bold btn btn-donation btn-donate"> QUERO DOAR!</h2></a> -->
                   </div>
 
                   <div class="col-12 col-md-3 text-right">
