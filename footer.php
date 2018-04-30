@@ -7,12 +7,7 @@
 			</div>
 
 			<div class="col-12 col-md-5">
-				<form class="" action="#" method="post">
-					<div class="newsletter input-group-prepend">
-						<input type="email" name="email" placeholder="Seu endereço de e-mail..." class="form-control rounded-0 font-input">
-						<button type="input" name="submit" class="btn btn-link bnt font-bold btn-submit">CADASTRAR</button>
-					</div>
-				</form>
+				<?php echo do_shortcode(' [contact-form-7 id="338" title="Novidades"] '); ?>
 			</div>
 		</div>
 
