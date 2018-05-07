@@ -13,7 +13,7 @@
 
             ?>
 
-            <div style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'full', ''); ?>'); height: 500px;"></div>
+            <div style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'full', ''); ?>'); height: 500px; background-size:cover; background-position: center center;"></div>
 
         <?php }
       } ?>
