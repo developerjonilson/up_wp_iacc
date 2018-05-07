@@ -32,13 +32,13 @@
                     <!-- <a href="#"><h2 class="donaiton-title font-bold btn btn-donation btn-donate"> QUERO DOAR!</h2></a> -->
                   </div>
 
-                  <div class="col-12 col-md-3 text-right">
+                  <div class="col-6 col-md-3 text-right text-bank-account">
                     <span class="d-flex justify-content-end font-bold">BANCO DO BRASIL</span>
                     <span class="d-flex justify-content-end"> Agência 1598-9</span>
                     <span class="d-flex justify-content-end">Conta 24863-0</span>
                   </div>
 
-                  <div class="col-12 col-md-3 text-right">
+                  <div class="col-6 col-md-3 text-right text-bank-account">
                     <span class="d-flex justify-content-end font-bold">CAIXA ECONÔMICA</span>
                     <span class="d-flex justify-content-end">Agência 0032</span>
                     <span class="d-flex justify-content-end">Conta 35.024-5</span>
