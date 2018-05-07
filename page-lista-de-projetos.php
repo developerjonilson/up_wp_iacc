@@ -26,11 +26,11 @@ get_header();
                 $classText = 'text-left pr-5';
               }
               ?>
-                <div class="d-flex <?php echo $class; ?>">
-                  <div class="image">
+                <div class="d-flex <?php echo $class; ?> post-project">
+                  <div class="image image-project">
                     <div style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium', ''); ?>'); background-size: cover; width: 200px; height: 200px;"></div>
                   </div>
-                  <div class="content <?php echo $classText; ?>">
+                  <div class="content content-project <?php echo $classText; ?>">
                     <h4 class="text-bold"> <strong><?= the_title(); ?></strong> </h4>
                     <p class="text-justify"> <?= the_content(); ?> </p>
                   </div>
