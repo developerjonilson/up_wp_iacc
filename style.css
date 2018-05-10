@@ -88,6 +88,10 @@ Version: 1.0
     font-weight: 700;
   }
 
+  .logo img {
+    max-width: 110px !important;
+  }
+
   .date-news{
     color: #ed1550;
     font-size: 12px;
@@ -327,7 +331,6 @@ Version: 1.0
 
   .content-about {
     padding-top: 65px;
-    padding-bottom: 80px;
   }
 
   .about-title {

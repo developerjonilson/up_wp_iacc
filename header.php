@@ -41,7 +41,7 @@
         <div class="container">
           <nav class="navbar nav-background-color font-bold nav-fonts d-flex justify-content-between" style="background-image: url('<?= DIR; ?>/assets/img/doodle_bg.png');">
             <a class="phone-navbar">(88) 3532-3743</a>
-            <a class="navbar-bran logo-tag" href="/"><img src="<?= DIR; ?>/assets/img/LOGO.png" alt="IACC" class="logotipo"></a>
+            <a class="navbar-bran logo-tag logo" href="/"><img src="<?= DIR; ?>/assets/img/LOGO.png" alt="IACC" class="logotipo"></a>
             <div class="button-store">
                 <i class="fa fa-shopping-cart mr-1" aria-hidden="true"></i>
                 Lojinha

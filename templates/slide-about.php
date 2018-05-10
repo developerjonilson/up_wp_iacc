@@ -3,7 +3,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6"></div>
+        <div class="col-12 col-md-7"></div>
 
         <?php
         $page = 'sobre-nos';
@@ -18,7 +18,7 @@
                 $diret = get_field('diretoria_executiva');
             } ?>
 
-            <div class="col-12 col-md-6 content-about">
+            <div class="col-12 col-md-5 content-about">
               <div class="about-title">
                 <h2 class="font-bold">SOBRE A IACC</h2>
               </div>
